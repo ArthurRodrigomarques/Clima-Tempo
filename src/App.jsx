@@ -1,9 +1,6 @@
 import { useState, useEffect } from 'react';
 import './App.css';
 import {v4 as uuid} from "uuid"
-import {
-  FaTemperatureHigh as ThermometerIcon, 
-  FaWind as WindIcon, FaSpinner} from 'react-icons/fa'
 
 
 
