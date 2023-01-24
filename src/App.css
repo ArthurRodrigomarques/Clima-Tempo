@@ -16,3 +16,149 @@
         transform: rotateZ(360deg);
     }
 }
+
+
+
+
+
+body {
+    background: linear-gradient(rgb(90, 100, 133), rgb(26, 58, 160));
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+  }
+  
+  .App button, .App input {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .App {
+    max-width: 1200px;
+    margin: auto;
+    height: 100vh;
+    width: 90%;
+    padding: 15px;
+  }
+  
+  .App input, .App button {
+    border: 0;
+    border-radius: 16px;
+    color: #fff;  
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
+    height: 36px;
+  }
+  
+  @media screen and (max-width: 420px) {
+    .App button {
+      flex: 1;
+      margin-top: 42px;
+    }
+  
+    h3 {
+      font-size: 1rem;
+    }
+  }
+  
+  .App input {
+    flex: 1;
+    width: 80%;
+    padding: 6px 12px 6px 10px;
+    background-color: #333;
+    outline: none;
+    font-size: 1.1rem;
+  }
+  
+
+  
+  .App header form {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  
+  .App button {
+    background-color: hsl(226, 72%, 36%);
+    color: #fff;
+    transition: .2s ease-in-out;
+    min-width: 160px;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 24px 10px;
+  }
+  
+  .App button:hover {
+    background-color: hsl(226, 72%, 26%);
+    cursor: pointer;
+  }
+  
+  
+  .App h1 {
+    text-align: center;
+    font-size: 40px;
+    margin: 36px 0px;
+  }
+  
+  .App h2 {
+    font-weight: 400;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  .App p {
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 18px;
+  }
+  
+  .App section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin: 72px 0;
+  }
+  
+  .current-weather p {
+    font-size: 48px;
+  }
+  
+  .current-weather p + p {
+    font-size: 32px;
+  }
+  
+  .forecast ol {
+    list-style: none;
+  }
+  
+  .forecast ol li {
+    width: 95%;
+    padding: 8px 24px;
+    background-color: rgba(0, 0, 0, .55);
+    border-radius: 16px;
+  
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .forecast ol li + li {
+    margin-top: 8px;
+  }
+  
+  .forecast ol li h3 {
+    font-weight: 400;
+    min-width: 120px;
+    text-align: left;
+  }
+  
+  .forecast ol li div {
+    display: flex;
+    min-width: 90px;
+  }
+  
+  .forecast ol li div svg {
+    font-size: 18px;
+    margin-right: 8px;
+  }

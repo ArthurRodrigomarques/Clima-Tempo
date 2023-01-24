@@ -67,7 +67,7 @@ function App() {
       </form>
 
       {city && weather &&(
-        <>
+        <div className='forecast'>
           <h1>{city}</h1>
           <h2>Tempo atual</h2>
            <p>{weather.temperature}</p> 
@@ -79,7 +79,7 @@ function App() {
               </p>
 
            <h2>Previsão</h2>
-           <ul>
+           <ol>
             {weather.forecast.map((dayForecast, index) => {
               return (
                 <li key={uuid()}>
@@ -105,10 +105,9 @@ function App() {
                 </li>
               )
             })}
-             
-             
-           </ul>
-        </>
+            
+           </ol>
+        </div>
       )}
       <h1></h1>
     </div>
