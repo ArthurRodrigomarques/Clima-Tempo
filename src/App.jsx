@@ -43,11 +43,7 @@ function App() {
       } finally {
         setLoading(false)
       }
-
-
-
     }
-
     getCityWeather()
   }, [city])
 
@@ -70,7 +66,7 @@ function App() {
         <div className='forecast'>
           <h1>{city}</h1>
           <h2>Tempo atual</h2>
-           <p>{weather.temperature}</p> 
+           <p className='temperature'>{weather.temperature}</p> 
               <p>{
                   translatedCurrentWeatherTable[weather.description]
                     ? translatedCurrentWeatherTable[weather.description] 
